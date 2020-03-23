@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css?family=Yantramanav:100');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400');
+
+html, body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.intro {
+    height: 100%;
+    width: 100%;
+    margin: auto;
+    background: url(https://upload.wikimedia.org/wikipedia/commons/0/0f/BTS_on_the_Billboard_Music_Awards_red_carpet%2C_1_May_2019.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    display: table;
+    top: 0;
+}
+
+.intro .inner{
+    display: table-cell;
+    vertical-align: middle;
+    width: 100%;
+    max-width: none;
+}
+
+.content {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 28%;
+}
+
+.content h1 {
+    font-family: 'Yantramanav', sans-serif;
+    font-size: 600%;
+    font-weight: 100;
+    color: red;
+    line-height: 70%;
+
+}
+
+.btn {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 135%;
+    font-weight: 400;
+    color: blue;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: solid blue;
+    padding: 10px 20px;
+    border-radius: 9px;
+    transition: all .5s;
+}
+
+.btn:hover {
+    color: white;
+    border: solid white;
+}
+
+p {
+    font-size: 120%;
+    line-height: 120%;
+    font-family: sans-serif;
+
+}
+
+/* for screen changes size our text size changes too */
+
+/*--- Media Queries --*/
+@media screen and (max-width: 900px) {
+    .content{
+        padding-bottom: 30%;
+    }
+    .content h1 {
+        font-size: 450%;
+    }
+    .btn {
+        font-size: 110%;
+        padding: 9px 17px;
+    }
+
+}
+@media screen and (max-width: 768px) {
+    .content{
+        padding-bottom: 40%;
+    }
+    .content h1 {
+        font-size: 300%;
+    }
+    .btn {
+        font-size: 130%;
+        padding: 9px 17px;
+    }
+    p {
+        font-size: 120%;
+        line-height: 100%;
+    }
+}
+@media screen and (max-width: 480px) {
+	.content{
+        padding-bottom: 50%;
+    }
+    .content h1 {
+        font-size: 250%;
+    }
+    .btn {
+        font-size: 110%;
+        padding: 6px 14px;
+    }
+    p {
+        font-size: 100%;
+        line-height: 100%;
+    }
+}
